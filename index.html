@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX CLONE</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -26,17 +32,63 @@
     <main>
         <div id="overlay"></div>
         <img id="imagembg" src="img/BackgroundIMG.jpg" alt="background">
-        
-        
+
+
         <div id="quadrobusca">
-            <p class="categoriasmain">Filmes, séries e muito mais. <br> Sem Limites.</p>
-            <p class="assistamain">Assista onde quiser. Cancele quando quiser.</p>
+            <p class="categoriasmain">Filmes, séries e muito mais. <br> <span> Sem Limites.</span></p>
+            <p class="assistamain"> <span> Assista </span>onde quiser. Cancele quando quiser.</p>
             <p class="emailmain">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-            <input id="inputmail" type="text" size="30" placeholder="Email">
-            <a class="btnlogar2" href="#">Vamos lá!</a>
+            <div class="especial">
+                <input id="inputmail" type="text" size="30" placeholder="Email">
+                <a class="btnlogar2" href="#">Vamos lá!</a>
+            </div>
         </div>
 
     </main>
+
+    <div class="separador">Lançamentos recentes - <span> Clique </span>para assistir ao trailer.</div>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Yj0l7iGKh8g" target="_blank"> <img class="box-filme" src="img/1.jpg" alt="Flash"> </a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=wXzo8JzRM0Y" target="_blank"> <img class="box-filme" src="img/2.jpg" alt="Superman"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=uVQu7byChTk" target="_blank"> <img class="box-filme" src="img/3.jpg" alt="Loki"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=OUqfP1S-9ok" target="_blank"> <img class="box-filme" src="img/4.jpg" alt="Bad Batch"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=TSSyU2uEusQ" target="_blank"> <img class="box-filme" src="img/5.jpg" alt="O Conto da Aia"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=4mo_ORNGqq0" target="_blank"> <img class="box-filme" src="img/6.jpg" alt="Legados"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=t04JpO7GbYc" target="_blank"> <img class="box-filme" src="img/7.jpg" alt="Elite"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=HQIqlqq2Y3I" target="_blank"> <img class="box-filme" src="img/8.jpg" alt="Van Helsing"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=IKtL4IW6G0I" target="_blank"> <img class="box-filme" src="img/9.jpg" alt="Lista Negra"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=RlaV8sJGhfc" target="_blank"> <img class="box-filme" src="img/10.jpg" alt="High School Musical"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer> Desenvolvido por Alan Cavalcante</footer>
+
+    <script src="owl/jquery.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+
 </body>
 
 </html>

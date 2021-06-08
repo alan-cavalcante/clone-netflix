@@ -22,6 +22,7 @@ body {
 
 header .container {
     position: absolute;
+    max-height: 150px;
     height: 150px;
     width: 100%;
     /* background-color: var(--vermelho-escuro); */
@@ -47,11 +48,19 @@ header img {
 
 /* Navigation */
 
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
 nav .categorias {
     color: white;
     font-weight: bold;
     margin: 0 10px;
     text-transform: uppercase;
+    transition: ease .5s;
 }
 
 nav a:hover {
@@ -67,6 +76,11 @@ nav a:hover {
     border-radius: 7px;
     margin-left: 30px;
     font-size: large;
+}
+
+.btnlogar:hover {
+    background-color: white;
+    transition: ease .5s;
 }
 
 /* Main */
@@ -93,7 +107,7 @@ main img {
 }
 
 #quadrobusca {
-    top: 40%;
+    top: 30%;
     width: 100%;
     position: absolute;
     display: flex;
@@ -107,37 +121,75 @@ main img {
     font-size: 3em;
     color:white; 
     font-weight: bold;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 #quadrobusca .assistamain {
     font-size: 1.5em;
     color:white;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-top: 30px;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 #quadrobusca .emailmain {
     font-size: 1.3em;
     color:white;
-    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+span {
+    color: yellow;
+}
+
+.especial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
 }
 
 #inputmail {
-    padding: 10px;
+    padding: 12px;
     text-align: left;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    border-radius: 5px;
+    border: solid 1px black;
+    border-right: 0;
 }
 
 .btnlogar2 {
     font-weight: bold;
     background-color: var(--vermelho-claro);
     color: white;
-    padding: 10px 15px;
+    padding: 9px 15px;
     border: solid 1px black;
-    border-radius: 7px;
+    border-left: 0;
     font-size: large;
+}
+
+.separador {
+    background-color: var(--vermelho-escuro);
+    padding: .5%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: var(--cinza-fechado);
+    padding: 10px;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    
+    header .container {
+        flex-direction: column;
+    }
 }
